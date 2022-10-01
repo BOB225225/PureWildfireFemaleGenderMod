@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "id": "wildfire_gender",
+  "version": "1.19.2-2.9.1",
+  "name": "Wildfire's Female Gender Mod",
+  "description": "Allows players to choose what gender they want to be.",
+  "authors": [
+    "WildfireRomeo"
+  ],
+  "contributors": [
+    "Archl",
+    "Arcti_cc",
+    "IzzyBizzy45",
+    "Kichura",
+    "Powerless001",
+    "pupnewfster",
+    "BOB225225"
+  ],
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/female-gender-fabric",
+    "sources": "https://github.com/WildfireRomeo/WildfireFemaleGenderMod/tree/master",
+    "issues": "https://github.com/WildfireRomeo/WildfireFemaleGenderMod/issues"
+  },
+  "license": "GPL-3.0",
+  "icon": "assets/wildfire_gender/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.wildfire.main.WildfireGenderServer"
+    ],
+    "client": [
+      "com.wildfire.main.WildfireGender"
+    ]
+  },
+  "mixins": [
+    "wildfire_gender.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": ">=0.47.9",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "conflicts": {
+    "skinlayers": "*",
+    "gender": "*"
+  },
+  "suggests": {
+    "mermod": ">=1.9",
+    "trinkets": ">=3.3.0"
+  }
+}
